@@ -3,21 +3,17 @@ package com.example.andre.questquiz;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.WindowManager;
 
-public class splash extends Activity {
+public class TelaSplash extends Activity {
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Init();
+        setContentView(R.layout.splash_activity);
+        init();
     }
-    public void Init(){
-        setContentView(R.layout.activity_splash);
+    public void init(){
 
         new Handler().postDelayed(new Runnable() {
             @Override
