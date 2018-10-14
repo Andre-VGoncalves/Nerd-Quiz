@@ -1,12 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:background="@drawable/gradient">
+
+    <ScrollView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="150dp"
+          android:layout_centerHorizontal="true">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                      <Button
+                          android:id="@+id/b1"
+                          android:layout_width="200dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="0dp"
+                          android:shadowRadius="@integer/google_play_services_version"
+                          android:background="@drawable/borda_btn2"
+                          android:elevation="5dp"
+                          android:text="Português"
+                          android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                          android:textColor="@color/navbar" />
+                      <Button
+                          android:id="@+id/b2"
+                          android:layout_width="200dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="15dp"
+                          android:shadowRadius="@integer/google_play_services_version"
+                          android:background="@drawable/borda_btn2"
+                          android:elevation="5dp"
+                          android:text="Matematica"
+                          android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                          android:textColor="@color/navbar" />
+                      <Button
+                          android:id="@+id/b3"
+                          android:layout_width="200dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="15dp"
+                          android:shadowRadius="@integer/google_play_services_version"
+                          android:background="@drawable/borda_btn2"
+                          android:elevation="5dp"
+                          android:text="Geografia"
+                          android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                          android:textColor="@color/navbar" />
+                      <Button
+                          android:id="@+id/b4"
+                          android:layout_width="200dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="15dp"
+                          android:shadowRadius="@integer/google_play_services_version"
+                          android:background="@drawable/borda_btn2"
+                          android:elevation="5dp"
+                          android:text="Historia"
+                          android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                          android:textColor="@color/navbar" />
+                      <Button
+                          android:id="@+id/b5"
+                          android:layout_width="200dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="15dp"
+                          android:shadowRadius="@integer/google_play_services_version"
+                          android:background="@drawable/borda_btn2"
+                          android:elevation="5dp"
+                          android:text="Ciência"
+                          android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                          android:textColor="@color/navbar" />
+                      <Button
+                          android:id="@+id/b6"
+                          android:layout_width="200dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="15dp"
+                          android:shadowRadius="@integer/google_play_services_version"
+                          android:background="@drawable/borda_btn2"
+                          android:elevation="5dp"
+                          android:text="Biologia"
+                          android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                          android:textColor="@color/navbar" />
+                      <Button
+                          android:id="@+id/b7"
+                          android:layout_width="200dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="15dp"
+                          android:shadowRadius="@integer/google_play_services_version"
+                          android:background="@drawable/borda_btn2"
+                          android:elevation="5dp"
+                          android:text="Conhecimentos Gerais"
+                          android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                          android:textColor="@color/navbar" />
+
+
+
+
+              </LinearLayout>
+
+
+      </ScrollView>
+
     <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FragHome"
-        android:textSize="50dp"/>
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:autoSizeTextType="uniform"
+        android:text="Escolha uma das opções abaixo"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+        android:textColor="@android:color/white" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/banner" />
+
+
+</RelativeLayout>
