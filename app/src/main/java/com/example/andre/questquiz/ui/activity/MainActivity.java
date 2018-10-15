@@ -7,15 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-
 import com.example.andre.questquiz.R;
 import com.example.andre.questquiz.ui.activity.fragment.HomeFragment;
 import com.example.andre.questquiz.ui.activity.fragment.MenuFragment;
 import com.example.andre.questquiz.ui.activity.fragment.StatsFragment;
 import com.example.andre.questquiz.ui.activity.fragment.ViewPageAdapter;
-
-import static android.widget.Toast.*;
 
 public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
     private TabLayout tabLayout;
@@ -44,12 +40,83 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         }
     }
 
-    public void showPopup(View v){
+    public void showPopup_por(View v){
         PopupMenu popup = new PopupMenu(this,v);
         popup.setOnMenuItemClickListener(this);
-        popup.inflate(R.menu.popup_menu);
+        popup.inflate(R.menu.popup_portugues);
         popup.show();
-
+    }
+    public void showPopup_mat(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_matematica);
+        popup.show();
+    }
+    public void showPopup_his(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_historia);
+        popup.show();
+    }
+    public void showPopup_geo(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_geografia);
+        popup.show();
+    }
+    public void showPopup_cie(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_ciencia);
+        popup.show();
+    }
+    public void showPopup_tec(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_tecnologia);
+        popup.show();
+    }
+    public void showPopup_fil(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_filosofia);
+        popup.show();
+    }
+    public void showPopup_soc(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_sociologia);
+        popup.show();
+    }
+    public void showPopup_fis(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_fisica);
+        popup.show();
+    }
+    public void showPopup_qui(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_quimica);
+        popup.show();
+    }
+    public void showPopup_art(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_artes);
+        popup.show();
+    }
+    public void showPopup_idi(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_idiomas);
+        popup.show();
+    }
+    public void showPopup_ger(View v){
+        PopupMenu popup = new PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_conhecimentos_gerais);
+        popup.show();
     }
 
     @Override
@@ -68,9 +135,9 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                     return false;
         }
     }
-    public void openCadastroPerguntas(){
+    public void openCadastroPerguntas(View view){
         //Implentar aqui comando para abrir tela de cadastro para as perguntas
-        
+        setContentView(R.layout.activity_cadastro_question);
     }
 
 }

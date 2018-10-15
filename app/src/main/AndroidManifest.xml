@@ -24,6 +24,7 @@
         <activity android:name=".ui.activity.CadastroUserActivity" />
         <activity android:name=".ui.activity.LoginActivity" />
         <activity android:name=".ui.activity.SplashActivity" />
+        <activity android:name=".ui.activity.CadastroQuestionActivity"></activity>
     </application>
 
 </manifest>
