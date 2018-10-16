@@ -16,175 +16,185 @@
                   android:layout_height="wrap_content"
                   android:orientation="vertical">
 
-                      <Button
-                          android:id="@+id/b1"
-                          android:layout_width="200dp"
-                          android:layout_height="wrap_content"
-                          android:layout_marginEnd="8dp"
-                          android:layout_marginStart="8dp"
-                          android:layout_marginTop="0dp"
-                          android:shadowRadius="@integer/google_play_services_version"
-                          android:background="@drawable/borda_btn2"
-                          android:elevation="5dp"
-                          android:text="Português"
-                          android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                          android:textColor="@color/navbar"
-                          android:onClick="showPopup_por"/>
                   <Button
-                      android:id="@+id/b2"
+                      android:id="@+id/btn_por"
                       android:layout_width="200dp"
                       android:layout_height="wrap_content"
                       android:layout_marginEnd="8dp"
                       android:layout_marginStart="8dp"
-                      android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
+                      android:layout_marginTop="0dp"
                       android:background="@drawable/borda_btn2"
                       android:elevation="5dp"
-                      android:text="Matematica"
-                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_mat"/>
-                  <Button
-                      android:id="@+id/b3"
-                      android:layout_width="200dp"
-                      android:layout_height="wrap_content"
-                      android:layout_marginEnd="8dp"
-                      android:layout_marginStart="8dp"
-                      android:layout_marginTop="10dp"
+                      android:onClick="showPopup_por"
                       android:shadowRadius="@integer/google_play_services_version"
-                      android:background="@drawable/borda_btn2"
-                      android:elevation="5dp"
-                      android:text="Historia"
+                      android:text="Português"
                       android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_his"/>
-                  <Button
-                      android:id="@+id/b4"
-                      android:layout_width="200dp"
-                      android:layout_height="wrap_content"
-                      android:layout_marginEnd="8dp"
-                      android:layout_marginStart="8dp"
-                      android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
-                      android:background="@drawable/borda_btn2"
-                      android:elevation="5dp"
-                      android:text="Geografia"
-                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_geo"/>
-                  <Button
-                      android:id="@+id/b5"
-                      android:layout_width="200dp"
-                      android:layout_height="wrap_content"
-                      android:layout_marginEnd="8dp"
-                      android:layout_marginStart="8dp"
-                      android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
-                      android:background="@drawable/borda_btn2"
-                      android:elevation="5dp"
-                      android:text="Ciência"
-                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_cie"/>
-                  <Button
-                      android:id="@+id/b6"
-                      android:layout_width="200dp"
-                      android:layout_height="wrap_content"
-                      android:layout_marginEnd="8dp"
-                      android:layout_marginStart="8dp"
-                      android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
-                      android:background="@drawable/borda_btn2"
-                      android:elevation="5dp"
-                      android:text="Tecnologia"
-                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_tec"/>
-                  <Button
-                      android:id="@+id/b7"
-                      android:layout_width="200dp"
-                      android:layout_height="wrap_content"
-                      android:layout_marginEnd="8dp"
-                      android:layout_marginStart="8dp"
-                      android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
-                      android:background="@drawable/borda_btn2"
-                      android:elevation="5dp"
-                      android:text="Filosofia"
-                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_fil"/>
-                  <Button
-                      android:id="@+id/b8"
-                      android:layout_width="200dp"
-                      android:layout_height="wrap_content"
-                      android:layout_marginEnd="8dp"
-                      android:layout_marginStart="8dp"
-                      android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
-                      android:background="@drawable/borda_btn2"
-                      android:elevation="5dp"
-                      android:text="Sociologia"
-                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_soc"/>
+                      android:textColor="@color/navbar" />
 
                   <Button
-                      android:id="@+id/b9"
+                      android:id="@+id/btn_mat"
                       android:layout_width="200dp"
                       android:layout_height="wrap_content"
                       android:layout_marginEnd="8dp"
                       android:layout_marginStart="8dp"
                       android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
                       android:background="@drawable/borda_btn2"
                       android:elevation="5dp"
+                      android:onClick="showPopup_mat"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Matematica"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_his"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_his"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Historia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_geo"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_geo"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Geografia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_cie"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_cie"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Ciência"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_tec"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_tec"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Tecnologia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_fil"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_fil"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Filosofia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_soc"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_soc"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Sociologia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_fis"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_fis"
+                      android:shadowRadius="@integer/google_play_services_version"
                       android:text="Fisica"
                       android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_fis"/>
+                      android:textColor="@color/navbar" />
+
                   <Button
-                      android:id="@+id/b10"
+                      android:id="@+id/btn_qui"
                       android:layout_width="200dp"
                       android:layout_height="wrap_content"
                       android:layout_marginEnd="8dp"
                       android:layout_marginStart="8dp"
                       android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
                       android:background="@drawable/borda_btn2"
                       android:elevation="5dp"
+                      android:onClick="showPopup_qui"
+                      android:shadowRadius="@integer/google_play_services_version"
                       android:text="Quimica"
                       android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_qui"/>
+                      android:textColor="@color/navbar" />
+
                   <Button
-                      android:id="@+id/b11"
+                      android:id="@+id/btn_art"
                       android:layout_width="200dp"
                       android:layout_height="wrap_content"
                       android:layout_marginEnd="8dp"
                       android:layout_marginStart="8dp"
                       android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
                       android:background="@drawable/borda_btn2"
                       android:elevation="5dp"
+                      android:onClick="showPopup_art"
+                      android:shadowRadius="@integer/google_play_services_version"
                       android:text="Artes"
                       android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_art"/>
+                      android:textColor="@color/navbar" />
+
                   <Button
-                      android:id="@+id/b12"
+                      android:id="@+id/btn_idi"
                       android:layout_width="200dp"
                       android:layout_height="wrap_content"
                       android:layout_marginEnd="8dp"
                       android:layout_marginStart="8dp"
                       android:layout_marginTop="10dp"
-                      android:shadowRadius="@integer/google_play_services_version"
                       android:background="@drawable/borda_btn2"
                       android:elevation="5dp"
+                      android:onClick="showPopup_idi"
+                      android:shadowRadius="@integer/google_play_services_version"
                       android:text="Idiomas"
                       android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
-                      android:textColor="@color/navbar"
-                      android:onClick="showPopup_idi"/>
+                      android:textColor="@color/navbar" />
                   <Button
                       android:id="@+id/b13"
                       android:layout_width="200dp"
@@ -205,10 +215,10 @@
       </ScrollView>
 
     <TextView
-        android:id="@+id/text1"
+        android:id="@+id/te"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView3"
+        android:layout_below="@+id/imgview_title"
         android:layout_centerHorizontal="true"
         android:autoSizeTextType="uniform"
         android:text="Escolha uma das opções abaixo"
@@ -216,7 +226,7 @@
         android:textColor="@android:color/white" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgview_title"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_alignParentTop="true"
@@ -224,7 +234,7 @@
         app:srcCompat="@drawable/banner" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/btn_flutuante"
         android:layout_width="60dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
