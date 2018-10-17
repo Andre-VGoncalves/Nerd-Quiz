@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
 
-import com.example.andre.questquiz.MainActivity;
 import com.example.andre.questquiz.R;
 
 public class SplashActivity extends Activity {
