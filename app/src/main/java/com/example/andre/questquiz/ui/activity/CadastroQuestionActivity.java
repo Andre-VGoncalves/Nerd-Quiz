@@ -9,6 +9,7 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 
 import com.example.andre.questquiz.R;
+import com.example.andre.questquiz.model.Question;
 
 public class CadastroQuestionActivity extends AppCompatActivity {
 
@@ -41,4 +42,24 @@ public class CadastroQuestionActivity extends AppCompatActivity {
         rdtfou = findViewById(R.id.rdt_op_fourth);
 
     }
+
+    public void cadastrarQuestion(View view) {
+        String opCorrect;
+        if (rdtOne.isChecked()){
+            opCorrect = "0";
+        }else if (rdtTwo.isChecked()){
+            opCorrect = "1";
+        }else if (rdtThere.isChecked()){
+            opCorrect = "2";
+        }else{
+            opCorrect = "3";
+        }
+
+        Question question= new Question("matematica","algebra",edtQuestion.getText().toString(),edtOpOne.getText().toString(),
+                edtOpTwo.getText().toString(),edtOpThere.getText().toString(),edtOpFou.getText().toString(),opCorrect);
+
+        question.salvar();
+
+    }
+
 }

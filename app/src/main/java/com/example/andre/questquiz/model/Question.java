@@ -1,5 +1,8 @@
 package com.example.andre.questquiz.model;
 
+import com.example.andre.questquiz.config.ConfigFirebase;
+import com.google.firebase.database.DatabaseReference;
+
 public class Question {
 
     String categoria;
@@ -21,6 +24,11 @@ public class Question {
         this.opTheree = opTheree;
         this.opFou = opFou;
         this.correct = correct;
+    }
+
+    public void salvar(){
+        DatabaseReference referenceFirebase = ConfigFirebase.getFirebase();
+        referenceFirebase.child(getCategoria()).child(getSubCategoria()).setValue(this);
     }
 
     public String getCategoria() {
