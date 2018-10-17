@@ -2,7 +2,8 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-            <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/appbar</item>
+        <item name="android:navigationBarColor">@color/navbar</item>
     </style>
 
 </resources>

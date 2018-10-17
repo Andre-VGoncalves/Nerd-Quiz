@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="150dp"
+          android:layout_centerHorizontal="true">
+
+              <LinearLayout
+                  android:gravity="center_horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <Button
+                      android:id="@+id/btn_por"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="0dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_por"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Português"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_mat"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_mat"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Matematica"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_his"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_his"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Historia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_geo"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_geo"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Geografia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_cie"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_cie"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Ciência"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_tec"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_tec"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Tecnologia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_fil"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_fil"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Filosofia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_soc"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_soc"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Sociologia"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_fis"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_fis"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Fisica"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_qui"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_qui"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Quimica"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_art"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_art"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Artes"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+
+                  <Button
+                      android:id="@+id/btn_idi"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:onClick="showPopup_idi"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:text="Idiomas"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar" />
+                  <Button
+                      android:id="@+id/btn_conhec"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginTop="10dp"
+                      android:shadowRadius="@integer/google_play_services_version"
+                      android:background="@drawable/borda_btn2"
+                      android:elevation="5dp"
+                      android:text="Conhecimentos Gerais"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                      android:textColor="@color/navbar"
+                      android:onClick="showPopup_ger"/>
+
+              </LinearLayout>
+
+      </ScrollView>
+
+    <TextView
+        android:id="@+id/te"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgview_title"
+        android:layout_centerHorizontal="true"
+        android:autoSizeTextType="uniform"
+        android:text="Escolha uma das opções abaixo"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imgview_title"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/banner" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_flutuante"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="12dp"
+        android:clickable="true"
+        android:onClick="openCadastroPerguntas"
+        app:backgroundTint="#4446b1"
+        app:srcCompat="@drawable/btn_add" />
+
+
+</RelativeLayout>
