@@ -1,5 +1,6 @@
 package com.example.andre.questquiz.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     }
     public void openCadastroPerguntas(View view){
         //Implentar aqui comando para abrir tela de cadastro para as perguntas
-        setContentView(R.layout.activity_cadastro_question);
+        startActivity(new Intent(MainActivity.this, CadastroQuestionActivity.class));
     }
 
 }
