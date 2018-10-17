@@ -47,6 +47,7 @@ public class LoginActivity extends Activity {
         user = new User();
         edtEmail = findViewById(R.id.editText);
         edtSenha = findViewById(R.id.editText2);
+        verificaUserLogado();
     }
 
     private void verificaUserLogado() {
@@ -130,7 +131,7 @@ public class LoginActivity extends Activity {
     }
 
     public void logar(View view) {
-        
+
         user.setEmail(edtEmail.getText().toString());
         user.setSenha(edtSenha.getText().toString());
 
