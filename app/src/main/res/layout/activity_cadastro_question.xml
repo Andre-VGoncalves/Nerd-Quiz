@@ -40,7 +40,7 @@
         <Spinner
             android:id="@+id/spn_sub_categoria"
             android:layout_width="match_parent"
-            android:layout_height="16dp"
+            android:layout_height="0dp"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
@@ -184,6 +184,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@android:color/white"
                 android:text="@string/op_one" />
 
             <RadioButton
@@ -191,6 +192,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@android:color/white"
                 android:text="@string/op_two" />
 
             <RadioButton
@@ -198,6 +200,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@android:color/white"
                 android:text="@string/op_there" />
 
             <RadioButton
@@ -205,6 +208,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@android:color/white"
                 android:text="@string/op_quatro" />
         </RadioGroup>
 
@@ -228,6 +232,9 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/borda_btn"
+            android:text="Cadastrar Pergunta"
+            android:textColor="@android:color/white"
             android:layout_marginTop="24dp"
             android:onClick="cadastrarQuestion"
             app:layout_constraintEnd_toEndOf="parent"

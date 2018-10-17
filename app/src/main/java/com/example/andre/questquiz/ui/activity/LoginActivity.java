@@ -1,6 +1,8 @@
 package com.example.andre.questquiz.ui.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.os.Bundle;
@@ -135,5 +137,34 @@ public class LoginActivity extends Activity {
 
         validarLogin();
 
+    }
+
+    public void abrirDialog(View view) {
+
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(LoginActivity.this);
+        //configurar a dialog
+        alertDialog.setTitle("Recuperar Senha");
+        alertDialog.setMessage("E-mail do Usuário");
+        alertDialog.setCancelable(false);
+        final EditText edtEmail = new EditText(LoginActivity.this);
+        alertDialog.setView(edtEmail);
+
+
+        //configurar Botões
+        alertDialog.setPositiveButton("Cadastrar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+
+        alertDialog.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        alertDialog.create();
+        alertDialog.show();
     }
 }
