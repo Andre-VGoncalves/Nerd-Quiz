@@ -119,12 +119,13 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_Cadastrar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/borda_btn"
         android:text="Cadastrar"
+        android:onClick="cadastarUser"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Inverse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"

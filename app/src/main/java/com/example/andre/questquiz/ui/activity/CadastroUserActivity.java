@@ -5,11 +5,14 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.andre.questquiz.R;
 import com.example.andre.questquiz.config.ConfigFirebase;
 import com.example.andre.questquiz.data.SharedPrefeHelper;
+import com.example.andre.questquiz.helper.Base64Custom;
 import com.example.andre.questquiz.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -24,12 +27,22 @@ public class CadastroUserActivity extends AppCompatActivity {
     private FirebaseAuth autenticacao;
     private User user;
 
+    EditText edtNome;
+    EditText edtEmail;
+    EditText edtSenha;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_user);
+        edtNome = findViewById(R.id.edt_nome);
+        edtEmail = findViewById(R.id.edt_email);
+        edtSenha = findViewById(R.id.edt_senha);
+        user = new User();
     }
+
+
 
     private void cadastrarUser() {
         autenticacao = ConfigFirebase.getFirebaseAutenticacao();
@@ -46,7 +59,7 @@ public class CadastroUserActivity extends AppCompatActivity {
 
                     String identificadorUser =  "";
                             //criar metodo e uma classe para deixar na base 64
-                            //identificadorUser = Base64Custom.codificarBase64(user.getEmail());
+                            identificadorUser = Base64Custom.codificarBase64(user.getEmail());
                     user.setId(identificadorUser);
                     user.salvar();
 
@@ -81,5 +94,13 @@ public class CadastroUserActivity extends AppCompatActivity {
         Intent intent = new Intent(CadastroUserActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public void cadastarUser(View view) {
+        user.setNome(edtNome.getText().toString());
+        user.setEmail(edtEmail.getText().toString());
+        user.setSenha(edtSenha.getText().toString());
+
+        cadastrarUser();
     }
 }

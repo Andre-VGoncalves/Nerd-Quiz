@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
 import com.example.andre.questquiz.R;
 
 public class HomeFragment extends Fragment   {
@@ -23,6 +22,5 @@ public class HomeFragment extends Fragment   {
         view = inflater.inflate(R.layout.fragment_home,container,false);
         return view;
     }
-
 
 }

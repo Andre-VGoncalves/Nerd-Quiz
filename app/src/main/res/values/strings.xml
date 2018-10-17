@@ -14,4 +14,27 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="question">Digite a Questão</string>
+    <string name="op_one">Opção Um</string>
+    <string name="op_two">Opção dois</string>
+    <string name="op_there">Opção Três</string>
+    <string name="op_quatro">Opção Quatro</string>
+    <string name="marque_a_op_o_correta">Marque a Opção correta</string>
+
+    <string-array name="lista_materia">
+        <item>portugues</item>
+        <item>matematica</item>
+        <item>historia</item>
+        <item>geografia</item>
+        <item>ciencia</item>
+        <item>tecnologia</item>
+        <item>filosofia</item>
+        <item>sociologia</item>
+        <item>fisica</item>
+        <item>quimica</item>
+        <item>artes</item>
+        <item>idiomas</item>
+        <item>gerais</item>
+    </string-array>
+
 </resources>
