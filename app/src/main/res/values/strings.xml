@@ -14,4 +14,10 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="question">Digite a Questão</string>
+    <string name="op_one">Opção Um</string>
+    <string name="op_two">Opção 2</string>
+    <string name="op_there">Opção Três</string>
+    <string name="op_quatro">Opção Quatro</string>
+    <string name="marque_a_op_o_correta">Marque a Opção correta</string>
 </resources>
