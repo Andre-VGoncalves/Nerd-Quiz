@@ -1,5 +1,27 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'findbugs'
+check.dependsOn 'findbugs'
+
+task findbugs(type: FindBugs) {
+    ignoreFailures = false
+    effort = 'max'
+    reportLevel = 'high'
+    excludeFilter = new File("${project.rootDir}/config/findbugs-filter.xml")
+    classes = files("${project.rootDir}/app/build/intermediates/classes")
+
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+
+    reports {
+        xml.enabled = false
+        html.enabled = true
+        html {
+            destination "$project.buildDir/reports/findbugs/findbugs.html"
+        }
+    }
+}
 
 android {
     compileSdkVersion 27
