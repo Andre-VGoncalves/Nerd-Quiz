@@ -8,6 +8,10 @@ public class Base64Custom {
         return Base64.encodeToString(texto.getBytes(),Base64.DEFAULT).replaceAll("(\\n|\\r)", "");
     }
 
+    public  String codificarBase(String texto){
+        return Base64.encodeToString(texto.getBytes(),Base64.DEFAULT).replaceAll("(\\n|\\r)", "");
+    }
+
     public static String decodificarBase64 (String textoCod){
         return new String (Base64.decode(textoCod, Base64.DEFAULT));
     }
