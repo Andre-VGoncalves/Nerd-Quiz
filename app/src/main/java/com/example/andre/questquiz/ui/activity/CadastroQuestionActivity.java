@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
@@ -13,8 +12,6 @@ import android.widget.Toast;
 
 import com.example.andre.questquiz.R;
 import com.example.andre.questquiz.model.Question;
-
-import static java.security.AccessController.getContext;
 
 public class CadastroQuestionActivity extends AppCompatActivity {
 

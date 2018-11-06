@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.PopupMenu;
-import android.view.MenuItem;
 import android.view.View;
 import com.example.andre.questquiz.R;
 import com.example.andre.questquiz.ui.activity.fragment.HomeFragment;

@@ -151,7 +151,7 @@ public class LoginActivity extends Activity {
 
 
         //configurar Botões
-        alertDialog.setPositiveButton("Cadastrar", new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton("Enviar", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 

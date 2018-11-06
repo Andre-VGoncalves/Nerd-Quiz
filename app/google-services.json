@@ -49,6 +49,68 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385986291564:android:58befcd5b639d4c3",
+        "android_client_info": {
+          "package_name": "com.example.andre.questquiz.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385986291564-jl75akn2n5bvgf859j07b3pj7f01olqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy6E-DLwzqz0F2ED1WsKQ3uCTUnSyNBek"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385986291564:android:109775d5f6cf3793",
+        "android_client_info": {
+          "package_name": "com.example.andre.questquiz.homolog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385986291564-jl75akn2n5bvgf859j07b3pj7f01olqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy6E-DLwzqz0F2ED1WsKQ3uCTUnSyNBek"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"
